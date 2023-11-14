@@ -4,6 +4,6 @@ version: 0.0.0
 dependencies:
 dependencies:
   - name: argo-cd
-    repository: https://argoproj.github.io/argo-helm
+    repository: oci://registry-1.docker.io/n0rad
     version: 5.50.0
 
