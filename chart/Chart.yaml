@@ -4,4 +4,4 @@ version: 0.0.0
 dependencies:
   - name: common
     repository: oci://registry-1.docker.io/bitnamicharts
-    version: 2.19.2
+    version: 2.19.3
