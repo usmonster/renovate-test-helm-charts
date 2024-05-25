@@ -4,4 +4,4 @@ version: 0.0.0
 dependencies:
   - name: ide-services-helm
     repository: oci://registry-1.docker.io/jetbrains
-    version: 2024.3.2
+    version: 2024.3.3
