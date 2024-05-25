@@ -2,6 +2,6 @@ apiVersion: v2
 name: test
 version: 0.0.0
 dependencies:
-  - name: kube-prometheus-stack
-    repository: oci://ghcr.io/prometheus-community/charts/kube-prometheus-stack
-    version: 58.7.1
+  - name: ide-services-helm
+    repository: oci://registry-1.docker.io/jetbrains/ide-services-helm
+    version: 2024.3.2
