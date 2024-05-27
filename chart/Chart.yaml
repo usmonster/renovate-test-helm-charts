@@ -2,6 +2,6 @@ apiVersion: v2
 name: test
 version: 0.0.0
 dependencies:
-  - name: kargo
-    repository: oci://ghcr.io/akuity/kargo-charts
-    version: 0.5.1
+  - name: kube-prometheus-stack:
+    repository: ghcr.io/prometheus-community/charts
+    version: 58.7.1
