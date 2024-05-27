@@ -2,6 +2,6 @@ apiVersion: v2
 name: test
 version: 0.0.0
 dependencies:
-  - name: kube-prometheus-stack:
+  - name: kube-prometheus-stack
     repository: ghcr.io/prometheus-community/charts
     version: 58.7.1
