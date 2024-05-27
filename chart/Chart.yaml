@@ -2,6 +2,6 @@ apiVersion: v2
 name: test
 version: 0.0.0
 dependencies:
-  - name: argo-cd
-    repository: https://argoproj.github.io/argo-helm
-    version: 5.50.0
+  - name: kargo
+    repository: oci://ghcr.io/akuity/kargo-charts
+    version: 0.5.1
