@@ -5,5 +5,5 @@ dependencies:
   - name: kube-prometheus-stack
     # repository: oci://ghcr.io/prometheus-community/charts
     repository: oci://registry-1.docker.io/usmonster
-    version: 59.0.0
+    version: 59.1.0
     # version: 60.0.0
