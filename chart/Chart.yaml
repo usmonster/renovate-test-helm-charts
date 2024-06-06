@@ -3,5 +3,6 @@ name: test
 version: 0.0.0
 dependencies:
   - name: kube-prometheus-stack
-    repository: oci://registry-1.docker.io/usmonster
+    repository: oci://ghcr.io/prometheus-community/charts
+    # repository: oci://registry-1.docker.io/usmonster
     version: 59.1.0
