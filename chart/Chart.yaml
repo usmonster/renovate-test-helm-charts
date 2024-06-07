@@ -8,4 +8,4 @@ dependencies:
     repository: oci://registry-1.docker.io/usmonster
     # version: 59.1.0
     # version: 60.0.0
-    version: 5.50.0
+    version: 5.51.0
