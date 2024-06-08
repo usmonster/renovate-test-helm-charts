@@ -2,10 +2,18 @@ apiVersion: v2
 name: test
 version: 0.0.0
 dependencies:
-  # - name: kube-prometheus-stack
+  - name: gha-runner-scale-set
+    repository: oci://ghcr.io/actions/actions-runner-controller-charts
+    version: 0.9.1
+  - name: kube-prometheus-stack
+    repository: oci://ghcr.io/prometheus-community/charts
+    version: 59.1.0
+  - name: kargo
+    repository: oci://ghcr.io/akuity/kargo-charts
+    version: 0.5.2
   - name: argo-cd
-    # repository: oci://ghcr.io/prometheus-community/charts
-    repository: oci://registry-1.docker.io/usmonster
-    # version: 59.1.0
-    # version: 60.0.0
+    repository: oci://registry-1.docker.io/bitnamicharts
     version: 5.50.0
+  - name: discourse
+    repository: oci://registry-1.docker.io/bitnamicharts
+    version: 13.0.3
