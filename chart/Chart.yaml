@@ -11,9 +11,9 @@ dependencies:
   - name: kargo
     repository: oci://ghcr.io/akuity/kargo-charts
     version: 0.5.2
-  - name: argo-cd
-    repository: oci://ghcr.io/argoproj/argo-helm
-    version: 5.50.0
+  # - name: argo-cd
+  #   repository: oci://ghcr.io/argoproj/argo-helm
+  #   version: 5.50.0
   - name: discourse
     repository: oci://registry-1.docker.io/bitnamicharts
     version: 13.0.3
