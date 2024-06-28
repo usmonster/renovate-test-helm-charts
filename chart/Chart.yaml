@@ -3,19 +3,19 @@ name: test
 version: 0.0.0
 dependencies:
   - name: gha-runner-scale-set
-    repository: oci://ghcr.io/actions/actions-runner-controller-charts # <- works fine, changelog in PR
+    repository: oci://ghcr.io/actions/actions-runner-controller-charts # <- changelog in PR, but citing wrong/ambiguous versions (not using prefixed releases, though it should; repo has both!)
     version: 0.9.1
   - name: kube-prometheus-stack
-    repository: oci://ghcr.io/prometheus-community/charts # <- works fine, changelog in PR
+    repository: oci://ghcr.io/prometheus-community/charts # <- works fine, changelog in PR, both releases & tags are prefixed
     version: 59.1.0
   - name: kargo
-    repository: oci://ghcr.io/akuity/kargo-charts # <- works fine, changelog in PR
+    repository: oci://ghcr.io/akuity/kargo-charts # <- changelog in PR, but seems to use mix of tags and releases (both are non-prefixed in this repo)
     version: 0.5.2
   - name: argo-cd
     # repository: oci://ghcr.io/argoproj/argo-helm # <- works fine, changelog in PR
     # repository: oci://registry-1.docker.io/n0rad # <- PR missing changelog because repo misses intermediate chart version (5.50.1)
-    repository: oci://registry-1.docker.io/usmonster # <- works fine, changelog in PR
+    repository: oci://registry-1.docker.io/usmonster # <- works fine, changelog in PR with proper references to prefixed releases
     version: 5.50.0
   - name: discourse
-    repository: oci://registry-1.docker.io/bitnamicharts # <- works fine, changelog in PR
+    repository: oci://registry-1.docker.io/bitnamicharts # <- works fine, changelog in PR, sourced from the CHANGELOG.md (though prefixed tags are also available)
     version: 13.0.3
