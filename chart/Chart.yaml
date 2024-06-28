@@ -7,7 +7,7 @@ dependencies:
     version: 0.9.1
   - name: kube-prometheus-stack
     repository: oci://ghcr.io/prometheus-community/charts # <- works fine, changelog in PR
-    version: 59.1.0
+    version: 60.5.0
   - name: kargo
     repository: oci://ghcr.io/akuity/kargo-charts # <- works fine, changelog in PR
     version: 0.5.2
