@@ -1,7 +1,7 @@
 apiVersion: v2
 name: test-dep
 description: Dependency of test
-version: 1.0.0
+version: 1.2.0
 home: https://github.com/usmonster/renovate-test-helm-charts
 sources:
 - https://github.com/usmonster/renovate-test-helm-charts/tree/main/test-dep
