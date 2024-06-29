@@ -20,5 +20,5 @@ dependencies:
     repository: oci://registry-1.docker.io/usmonster # <- works fine, changelog in PR with proper references to prefixed releases
     version: 5.50.0
   - name: test-dep
-    repository: oci://registry-1.docker.io/usmonster # <- [no changelog?]
+    repository: oci://registry-1.docker.io/usmonster # <- no changelog at all!
     version: 1.0.0
