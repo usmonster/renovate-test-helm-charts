@@ -13,7 +13,7 @@ dependencies:
   # changelog in PR, but citing wrong/ambiguous versions (not using prefixed releases, though it should; repo has both!)
   - name: gha-runner-scale-set
     repository: oci://ghcr.io/actions/actions-runner-controller-charts
-    version: 0.9.1
+    version: 0.9.3
   # works as expected; changelog in PR, sourced from the CHANGELOG.md
   - name: discourse
     repository: oci://registry-1.docker.io/bitnamicharts
