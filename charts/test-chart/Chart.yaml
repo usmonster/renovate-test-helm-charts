@@ -2,23 +2,31 @@ apiVersion: v2
 name: test-chart
 version: 0.0.0
 dependencies:
+  # works as expected; changelog in PR, using links to prefixed releases
   - name: kube-prometheus-stack
-    repository: oci://ghcr.io/prometheus-community/charts # <- works fine, changelog in PR, both releases & tags are prefixed
+    repository: oci://ghcr.io/prometheus-community/charts
     version: 59.1.0
+  # works as expected; changelog in PR, but uses tag comparison link for the last version since the corresponding release body is empty
   - name: kargo
-    repository: oci://ghcr.io/akuity/kargo-charts # <- changelog in PR, but seems to use mix of tags and releases (both are non-prefixed in this repo)
+    repository: oci://ghcr.io/akuity/kargo-charts
     version: 0.5.2
+  # changelog in PR, but citing wrong/ambiguous versions (not using prefixed releases, though it should; repo has both!)
   - name: gha-runner-scale-set
-    repository: oci://ghcr.io/actions/actions-runner-controller-charts # <- changelog in PR, but citing wrong/ambiguous versions (not using prefixed releases, though it should; repo has both!)
+    repository: oci://ghcr.io/actions/actions-runner-controller-charts
     version: 0.9.1
+  # works as expected; changelog in PR, sourced from the CHANGELOG.md
   - name: discourse
-    repository: oci://registry-1.docker.io/bitnamicharts # <- works fine, changelog in PR, sourced from the CHANGELOG.md (though prefixed tags are also available)
+    repository: oci://registry-1.docker.io/bitnamicharts
     version: 13.0.3
   - name: argo-cd
-    # repository: oci://ghcr.io/argoproj/argo-helm # <- works fine, changelog in PR
-    # repository: oci://registry-1.docker.io/n0rad # <- PR missing changelog because repo misses intermediate chart version (5.50.1)
-    repository: oci://registry-1.docker.io/usmonster # <- works fine, changelog in PR with proper references to prefixed releases
+  # works as expected, changelog in PR
+    # repository: oci://ghcr.io/argoproj/argo-helm
+  # missing changelog because repo misses intermediate chart version (5.50.1); cf. #29687
+    # repository: oci://registry-1.docker.io/n0rad
+  # works as expected, changelog in PR with proper references to prefixed releases
+    repository: oci://registry-1.docker.io/usmonster
     version: 5.50.0
+  # missing changelog! (expected: changelog or helpful debug message in logs)
   - name: test-dep
-    repository: oci://registry-1.docker.io/usmonster # <- no changelog at all!
+    repository: oci://registry-1.docker.io/usmonster
     version: 1.0.0
