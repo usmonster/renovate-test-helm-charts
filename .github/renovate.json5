@@ -3,4 +3,19 @@
     "config:recommended",
   ],
   prConcurrentLimit: 10,
+  // attempt to debug
+  logLevelRemap: [
+    {
+      "matchMessage": "github.getReleaseList()",
+      "newLogLevel": "debug"
+    },
+    {
+      matchMessage: "/^getReleaseNotes/",
+      newLogLevel: "debug"
+    },
+    {
+      matchMessage: "/^Release list from getReleaseList/",
+      newLogLevel: "debug"
+    }
+  ],
 }
