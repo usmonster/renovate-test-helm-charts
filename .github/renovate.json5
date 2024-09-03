@@ -6,19 +6,19 @@
   // attempt to debug
   logLevelRemap: [
     {
-      matchMessage: "/^github\.getReleaseList\(\)/",
+      matchMessage: "/^github\.getReleaseList\(\).*$/",
       newLogLevel: "debug"
     },
     {
-      matchMessage: "/^getReleaseNotes/",
+      matchMessage: "/^getReleaseNotes.*$/",
       newLogLevel: "debug"
     },
     {
-      matchMessage: "/^Release list from getReleaseList/",
+      matchMessage: "/^Release list from getReleaseList.*$/",
       newLogLevel: "debug"
     },
     {
-      matchMessage: "/^getChangeLogJSON/",
+      matchMessage: "/^getChangeLogJSON.*$/",
       newLogLevel: "debug"
     },
   ],
