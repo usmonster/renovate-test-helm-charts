@@ -5,7 +5,7 @@ dependencies:
   # works as expected; changelog in PR, using links to prefixed releases
   - name: kube-prometheus-stack
     repository: oci://ghcr.io/prometheus-community/charts
-    version: 59.1.0
+    version: 64.0.0
   # works as expected; changelog in PR, but uses tag comparison link for the last version since the corresponding release body is empty
   - name: kargo
     repository: oci://ghcr.io/akuity/kargo-charts
