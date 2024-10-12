@@ -9,7 +9,7 @@ dependencies:
   # works as expected; changelog in PR, but uses tag comparison link for the last version since the corresponding release body is empty
   - name: kargo
     repository: oci://ghcr.io/akuity/kargo-charts
-    version: 0.5.2
+    version: 0.9.1
   # changelog in PR, but citing wrong/ambiguous versions (not using prefixed releases, though it should; repo has both!)
   - name: gha-runner-scale-set
     repository: oci://ghcr.io/actions/actions-runner-controller-charts
