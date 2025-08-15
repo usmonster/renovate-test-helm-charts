@@ -29,4 +29,4 @@ dependencies:
   # missing changelog! (expected: changelog or helpful debug message in logs)
   - name: test-dep
     repository: oci://registry-1.docker.io/usmonster
-    version: 1.0.0
+    version: 1.2.0
