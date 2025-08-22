@@ -17,7 +17,7 @@ dependencies:
   # works as expected; changelog in PR, sourced from the CHANGELOG.md
   - name: discourse
     repository: oci://registry-1.docker.io/bitnamicharts
-    version: 13.0.3
+    version: 13.2.15
   - name: argo-cd
   # works as expected, changelog in PR
     # repository: oci://ghcr.io/argoproj/argo-helm
