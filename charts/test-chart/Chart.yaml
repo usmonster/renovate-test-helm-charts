@@ -25,7 +25,7 @@ dependencies:
     # repository: oci://registry-1.docker.io/n0rad
   # works as expected, changelog in PR with proper references to prefixed releases
     repository: oci://registry-1.docker.io/usmonster
-    version: 5.50.0
+    version: 5.51.0
   # missing changelog! (expected: changelog or helpful debug message in logs)
   - name: test-dep
     repository: oci://registry-1.docker.io/usmonster
